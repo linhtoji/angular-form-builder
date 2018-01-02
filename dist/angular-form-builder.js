@@ -321,8 +321,8 @@
               html: true,
               title: scope.$component.label,
               content: popover.view,
-              container: 'body',
-              placement: $builder.config.popoverPlacement
+              container: '.forms-client-container',
+              placement: 'left'
             });
           });
           scope.popover = {

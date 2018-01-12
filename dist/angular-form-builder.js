@@ -1186,6 +1186,19 @@
         return _this.reindexFormObject(name);
       };
     })(this);
+    this.removeAllFormObject = (function(_this) {
+      return function(name) {
+
+        /*
+        Remove the form object by the index.
+        @param name: The form name.
+         */
+        var formObjects;
+        formObjects = _this.forms[name];
+        formObjects = [];
+        return _this.reindexFormObject(name);
+      };
+    })(this);
     this.updateFormObjectIndex = (function(_this) {
       return function(name, oldIndex, newIndex) {
 

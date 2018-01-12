@@ -1195,7 +1195,7 @@
          */
         var formObjects;
         formObjects = _this.forms[name];
-        formObjects = [];
+        formObjects.splice(0, formObjects.length);
         return _this.reindexFormObject(name);
       };
     })(this);
@@ -1238,6 +1238,7 @@
             addFormObject: _this.addFormObject,
             insertFormObject: _this.insertFormObject,
             removeFormObject: _this.removeFormObject,
+            removeAllFormObject: _this.removeAllFormObject,
             updateFormObjectIndex: _this.updateFormObjectIndex
           };
         };
